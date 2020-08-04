@@ -60,3 +60,11 @@
 .header, .footer{
   background-color: rgb(8,79,161);
 }
+
+#drop{
+  background-color: rgb(8,79,161);
+}
+
+#drop a{
+  background-color: rgb(8,79,161);
+}
