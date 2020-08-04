@@ -1,0 +1,51 @@
+.fracox-card {
+  background-color: transparent;
+  width: 425px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.word {
+  padding: 10px;
+}
+
+.fracox-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+
+.fracox-card:hover .fracox-card-inner {
+  transform: rotateX(180deg);
+}
+
+
+.fracox-card-front, .fracox-card-back {
+  position: absolute;
+  width: 425px;
+  height: 150px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  border: 2px solid;
+}
+
+
+.fracox-card-front {
+  background-color: #bbb;
+  color: white;
+  padding: 15px;
+ 
+}
+
+
+.fracox-card-back {
+  background-color: dodgerblue;
+  padding: 15px;
+  color: white;
+  transform: rotateX(180deg);
+}
